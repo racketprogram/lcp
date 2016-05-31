@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 struct complex_struct {
-	double x, y
+	double x, y;
 };
 
 double real_part(struct complex_struct z)
