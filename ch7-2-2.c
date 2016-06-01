@@ -39,7 +39,7 @@ struct rat add_rat(struct rat s1, struct rat s2)
 	struct rat s = { 0, 0 };
 	int a1 = s1.d;
 	int a2 = s2.d;
-	s.d = gcd(a1, a2);
+	s.d = (a1 * a2) / gcd(a1, a2);
 	printf("%d\n", s.d);
 	s.u = s1.u / (s1.d / s.d) + s2.u / (s2.d / s.d);
 	printf("%d\n", s.u);
