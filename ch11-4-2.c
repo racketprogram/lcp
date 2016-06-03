@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define LEN 8
+#define LEN 10
 
-int a[LEN] = { 7, 6, 4, 2, 3, 1, 0, 5 };
+int a[LEN] = { 7, 9, 6, 4, 8, 2, 3, 1, 0, 5 };
 
 int partition(int start, int end)
 {
@@ -56,8 +56,13 @@ void qsort(int start, int end)
 
 int main(void)
 {
+	printf("%d %d %d %d %d %d %d %d %d %d\n",
+               a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9]);
+	
 	qsort(0, LEN-1);
-	printf("%d %d %d %d %d %d %d %d\n",
-               a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7]);
+	
+	printf("%d %d %d %d %d %d %d %d %d %d\n",
+               a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9]);
+
 	return 0;
 }
