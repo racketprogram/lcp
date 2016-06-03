@@ -14,7 +14,7 @@ void merge(int start, int mid, int end)
 		left[i] = a[start + i];
 	}
 	for (j = 0; j < n2; j++) {
-		right[i] = a[mid + 1 + j];
+		right[j] = a[mid + 1 + j];
 	}
 	i = j = 0;
 	k = start;

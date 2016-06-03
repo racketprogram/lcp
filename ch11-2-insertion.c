@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define LEN 5
+#define LEN 8
 
-int a[LEN] = { 10, 5, 2, 4, 7};
+int a[LEN] = { 10, 5, 2, 4, 7, 3, 2, 9 };
 
 void insertion_sort(void)
 {
