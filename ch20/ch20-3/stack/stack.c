@@ -1,3 +1,2 @@
 char stack[512];
-int pop = -1;
-
+int top = -1;
